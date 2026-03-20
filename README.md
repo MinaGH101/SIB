@@ -7,7 +7,6 @@ and splitting the dataset into train/validation/test sets**.
 This is useful when datasets use different class definitions but
 represent similar object types.
 
-------------------------------------------------------------------------
 
 # Input Dataset Format
 
@@ -35,7 +34,6 @@ nc: 5
 names: ['class1','class2','class3','class4','class5']
 ```
 
-------------------------------------------------------------------------
 
 # Class Mapping
 
@@ -55,7 +53,6 @@ Example mapping file:
 This means all objects labeled `Battle-Tank`, `M2A4-Slammer`, or
 `varsuk` will become the new class `tracked_armored`.
 
-------------------------------------------------------------------------
 
 # Running the Dataset Merger
 
@@ -70,7 +67,7 @@ python src/merge_yolo_datasets.py \
 --ratio 0.8 0.1 0.1
 ```
 
-------------------------------------------------------------------------
+
 
 # Arguments
 
@@ -104,7 +101,7 @@ means
 -   **10% validation**
 -   **10% test**
 
-------------------------------------------------------------------------
+
 
 # Output Dataset Structure
 
@@ -139,7 +136,7 @@ val: ./val/images
 test: ./test/images
 ```
 
-------------------------------------------------------------------------
+
 
 # Notes
 
